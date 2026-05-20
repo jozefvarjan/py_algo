@@ -122,6 +122,24 @@ pygments = ">=2.7.2"
 dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "requests", "setuptools", "xmlschema"]
 
 [[package]]
+name = "pytest-check"
+version = "2.8.0"
+description = "A pytest plugin that allows multiple failures per test."
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "pytest_check-2.8.0-py3-none-any.whl", hash = "sha256:671d94f857cebb4a4195baaf064ad77e3af8c37d0428dabdcfc3dcc992761634"},
+    {file = "pytest_check-2.8.0.tar.gz", hash = "sha256:c42e08ddd41ad9c387bd16efa664ade5def4d7aa5c607b05ba9e25f5aaba70c2"},
+]
+
+[package.dependencies]
+pytest = ">=7.0.0"
+
+[package.extras]
+dev = ["build", "tox", "tox-uv"]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.3"
 description = "YAML parser and emitter for Python"
@@ -207,4 +225,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "16d6baeba1119d9cc6ba0b3129495f59e0e75f25771dfe34d1193487cdb9b948"
+content-hash = "d3a1399ca2b5ff40cbdffd31b0ea90d9561be2d57bc5fb7e4dadc9a752e06d12"
