@@ -1,3 +1,5 @@
+# --- don't forget to configure python interpreter path! ---
+
 def find_equilibrium_index(arr):
     """"
         The Equilibrium index in an array is a position where the sum of elements
@@ -45,3 +47,13 @@ def find_triplets_with_zero_sum(arr) -> list[list]:
     return triplets
                     
                 
+
+def find_sum_of_even_numbers(upper_limit: int) -> int:
+    """
+        Gets sum of even numbers starting from 2, ending up to upper_limit.
+        Check if upper_limit is even number
+    """
+    if upper_limit % 2 == 0:
+        return (base := upper_limit / 2)*(base + 1)
+    else: 
+        raise ValueError(f"value of upper_limit: {upper_limit} is not even!")
